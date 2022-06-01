@@ -12,4 +12,4 @@ A user can claim it's reward at any time but the locking period will be definite
 
 
 
-![Webpage $AURA](https://github.com/sobi983/Staking-AURA-V2/blob/main/AURAWebpage1.png)
+![Webpage $AURA](https://github.com/sobi983/Satking-AURA-V2/blob/main/AURAWebpage1.png)
