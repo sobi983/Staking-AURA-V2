@@ -14,3 +14,13 @@ A user can claim it's reward at any time but the locking period will be definite
 
 
 ![Webpage $AURA](https://github.com/sobi983/Satking-AURA-V2/blob/main/AURAWebpage1.png)
+
+## Installation
+
+Setup the hardhat enviornment 
+
+```bash
+  npm setup  //install relevant dependencies
+  npm run compile //compile the contracts and create artifacts
+  npm test //test the testing scripts
+```
