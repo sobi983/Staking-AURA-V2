@@ -11,7 +11,8 @@ A user can stake it's ERC20 tokens into the contract. The APR in this project is
 
 A user can claim it's reward at any time but the locking period will be definite. The claim will be calculated per second, the user can't withdraw it's deposites before the expiry time. 
 
-APR = 30% (will be initilized when deploying the AURAStaking.sol)
+APR = 30% (will be initilized when deploying the AURAStaking.sol).
+
 Allocation Of Reward = 5 million (It can be changed later on by using `IncreaseAllowances` `DecreasesAllowances` functions.
 
 
