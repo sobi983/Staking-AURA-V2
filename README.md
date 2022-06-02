@@ -1,6 +1,7 @@
 # <img src="CIPHERS1-02 (1).png" alt="CIPHERS | contracts" height="90px"> 
 
 [![Docs](https://img.shields.io/badge/docs-%F0%9F%93%84-orange)](https://whitepaper.dragonsofmidgard.com/dragons-of-midgard/)
+![npm](https://img.shields.io/npm/v/hardhat?color=white)
 [![MIT License](https://codecov.io/gh/OpenZeppelin/openzeppelin-contracts/graph/badge.svg)](https://github.com/Dragons-Of-Midgard-Official/dragons-of-midgard-contracts)
 [![Discord](https://img.shields.io/discord/922410567162036244?color=purple&label=discord)](https://discord.gg/XeYzSHZAEp)
 ![GitHub repo size](https://img.shields.io/github/repo-size/sobi983/Staking-AURA-V2)
