@@ -6,7 +6,7 @@
 
 # About The Project
 
-This is a Staking contract created by CIPHERS ©️.
+This is a Staking contract created by CIPHERS©️.
 A user can stake it's ERC20 tokens into the contract. The APR in this project is static that will be initilize when deploying the contract. The APR can be chnaged from the defined function.
 
 A user can claim it's reward at any time but the locking period will be definite. The claim will be calculated per second, the user can't withdraw it's deposites before the expiry time. 
