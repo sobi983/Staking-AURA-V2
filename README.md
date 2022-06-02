@@ -116,4 +116,9 @@ Run test cases
 
 
 
+## License
+
+Distributed under the MIT License. See `License.txt` for more information.
+
+
 
