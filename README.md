@@ -41,3 +41,17 @@ To verify the contract
   npx hardhat verify --network rinkeby "STAKING CONTRACT ADDRESS" "ERC20(AURA) CONTRACT ADDRESS" "ALLOCATION OF REWARD - Integer" "MINIMUM STAKING AMOUNT - Integer"
 ```
 
+
+## Function Description
+
+
+
+
+| **Function**                    | **Parameters**                             |**Return**                  | **Description**                                                                                                                                        |
+| :-------------------------------| :----------------------------------------- | :------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `constructor()`(not a fucntion) | ```IERC20, _APR, _MinStakingAmount```      | none                       | ->The address of the ERC20 is initilized to the variable so the relevant function in the IERC20 can be used to interact with the deloyed ERC20 fdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff        |
+| `CurrentAPR()`                  | none                                       | APR                        | ->This function returns the current APR( Annual Percentage Rate)                                                                                       |
+
+
+
+
