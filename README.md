@@ -33,6 +33,19 @@ A user can claim it's reward at any time but the locking period will be definite
 
 [WhitePaper](https://docs.google.com/document/d/1W5fmUYNm7rTTrgAN5LxgCBfkuMoGFe3RRnZduO1S4l0/edit)
 
+## Features
+
+- Increase/Decrease Allocated rewards
+- TImelock stakes
+- Records of each individual users
+- Claim at any time 
+- Change the APR
+- Chnage the maximum and minimum staking amount
+- Change maximum and minimum locking period
+- Transfer back remaining token from pool to the owner
+- Withdraw ether in case of wrong transaction
+- Optimized contract (more improvement could be done)
+
 ## $AURA Token Utility
 ![$AURA Utility](https://github.com/sobi983/Satking-AURA-V2/blob/main/AURA-Utility.png)
 
