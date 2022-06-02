@@ -156,6 +156,14 @@ Run test cases
 
 Distributed under the MIT License. See `License.txt` for more information.
 
+## Contributing
+
+Contributions are always welcome!
+
+See `CONTRIBUTING.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
 ## Authors
 
 - [@Sobi](https://www.linkedin.com/in/sohaib-s-11a6ab170/)
