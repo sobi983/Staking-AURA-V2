@@ -156,13 +156,21 @@ Run test cases
 
 Distributed under the MIT License. See `License.txt` for more information.
 
+
 ## Contributing
 
-Contributions are always welcome!
+Contributions are always welcome. We believe in learning together.  Any contributions you make are greatly appreciated.
 
-See `CONTRIBUTING.md` for ways to get started.
+If you find any flaw or would like to increase the efficiency of the contract by optimising it or anything that would take us to a decision for adding your contributions then please fork this repo and create a pull request.
 
-Please adhere to this project's `code of conduct`.
+The pull requests will be reviewed and eventually merged into the main repo. See "Fork-a-Repo" for how this works. And don't forget to give this project a star⭐.
+
+- Fork the Project
+- Create your AURA Branch (git checkout -b AURA/feature)
+- Commit your Changes (git commit -m 'Add some Feature')
+- Push to the Branch (git push origin AURA/faeture)
+- Open a Pull Request
+
 
 ## Authors
 
