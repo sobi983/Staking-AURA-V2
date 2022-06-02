@@ -11,11 +11,10 @@ A user can stake it's ERC20 tokens into the contract. The APR in this project is
 
 A user can claim it's reward at any time but the locking period will be definite. The claim will be calculated per second, the user can't withdraw it's deposites before the expiry time. 
 
-APR = 30% (will be initilized when deploying the AURAStaking.sol).
 
-Allocation Of Reward = 5 million (It can be changed later on by using `IncreaseAllowances` `DecreasesAllowances` functions.
-
-
+**APR** = 30% (will be initilized when deploying the AURAStaking.sol).
+**Allocation Of Reward** = 5 million (It can be changed later on by using `IncreaseAllowances` `DecreasesAllowances` functions.
+**Time Period** = 14 days - 365 days.
 
 ![Webpage $AURA](https://github.com/sobi983/Satking-AURA-V2/blob/main/AURAWebpage1.png)
 
@@ -80,15 +79,7 @@ Run test cases
 
 
 
-## Function Description
-
-
-
-
-| **Function**                    | **Parameters**                             |**Return**                  | **Description**                                                                                                                                        |
-| :-------------------------------| :----------------------------------------- | :------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `constructor()`(not a fucntion) | ```IERC20, _APR, _MinStakingAmount```      | none                       | ->The address of the ERC20 is initilized to the variable so the relevant function in the IERC20 can be used to interact with the deloyed ERC20 fdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff        |
-| `CurrentAPR()`                  | none                                       | APR                        | ->This function returns the current APR( Annual Percentage Rate)                                                                                       |
+                                                                                    |
 
 
 
