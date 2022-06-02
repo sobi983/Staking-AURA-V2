@@ -168,7 +168,7 @@ The pull requests will be reviewed and eventually merged into the main repo. See
 - Fork the Project
 - Create your AURA Branch (git checkout -b AURA/feature)
 - Commit your Changes (git commit -m 'Add some Feature')
-- Push to the Branch (git push origin AURA/faeture)
+- Push to the Branch (git push origin AURA/feature)
 - Open a Pull Request
 
 
