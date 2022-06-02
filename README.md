@@ -4,7 +4,8 @@
 [![MIT License](https://codecov.io/gh/OpenZeppelin/openzeppelin-contracts/graph/badge.svg)](https://github.com/Dragons-Of-Midgard-Official/dragons-of-midgard-contracts)
 [![Discord](https://img.shields.io/discord/922410567162036244?color=purple&label=discord)](https://discord.gg/XeYzSHZAEp)
 ![GitHub repo size](https://img.shields.io/github/repo-size/sobi983/Staking-AURA-V2)
-![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fsobi983)
+![Twitter URL](https://img.shields.io/twitter/url?label=Sobi&style=social&url=https%3A%2F%2Ftwitter.com%2Fssob_ii)
+![Twitter URL](https://img.shields.io/twitter/url?label=Dragons%20Of%20Midgard&style=social&url=https%3A%2F%2Ftwitter.com%2FDragonsMidgard)
 
 
 # About The Project
