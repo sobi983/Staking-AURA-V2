@@ -18,6 +18,14 @@ A user can claim it's reward at any time but the locking period will be definite
 
 **Time Period** = 14 days - 365 days.
 
+**AURA/TOS** = https://www.dextools.io/app/ether/pair-explorer/0xbddd3a50bd2afd27aed05cc9fe1c8d67fcaa3218
+
+**$AURA** = *0xaec59e5b4f8dbf513e260500ea96eba173f74149*
+
+**$TOS** = *0x409c4d8cd5d2924b9bc5509230d16a61289c8153*
+
+**Liquidity Pool** = *UniswapV3*
+
 ![Webpage $AURA](https://github.com/sobi983/Satking-AURA-V2/blob/main/AURAWebpage1.png)
 
 
