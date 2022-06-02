@@ -20,6 +20,13 @@ A user can claim it's reward at any time but the locking period will be definite
 
 ![Webpage $AURA](https://github.com/sobi983/Satking-AURA-V2/blob/main/AURAWebpage1.png)
 
+
+## Documentation
+
+[WhitePaper](https://docs.google.com/document/d/1W5fmUYNm7rTTrgAN5LxgCBfkuMoGFe3RRnZduO1S4l0/edit)
+
+
+
 ## Installation
 
 Setup the hardhat enviornment 
