@@ -15,6 +15,7 @@ A user can claim it's reward at any time but the locking period will be definite
 **APR** = 30% (will be initilized when deploying the AURAStaking.sol).
 
 **Allocation Of Reward** = 5 million (It can be changed later on by using `IncreaseAllowances` `DecreasesAllowances` functions.
+
 **Time Period** = 14 days - 365 days.
 
 ![Webpage $AURA](https://github.com/sobi983/Satking-AURA-V2/blob/main/AURAWebpage1.png)
