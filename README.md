@@ -29,6 +29,7 @@ A user can claim it's reward at any time but the locking period will be definite
 ![$AURA Utility](https://github.com/sobi983/Satking-AURA-V2/blob/main/AURA-Utility.png)
 
 ## $AURA Layer 2
+**Layer 2 Solution Provider** https://tokamak.network/#/
 ![$AURA Layer2](https://github.com/sobi983/Satking-AURA-V2/blob/main/AURAL2.png)
 
 
