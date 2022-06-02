@@ -6,6 +6,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/sobi983/Staking-AURA-V2)
 ![Twitter URL](https://img.shields.io/twitter/url?label=Sobi&style=social&url=https%3A%2F%2Ftwitter.com%2Fssob_ii)
 ![Twitter URL](https://img.shields.io/twitter/url?label=Dragons%20Of%20Midgard&style=social&url=https%3A%2F%2Ftwitter.com%2FDragonsMidgard)
+![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UC1Nz5pFNUN8QQEtwpCSLZwA?label=Dragons%20Of%20Midgard&style=social)
 
 
 # About The Project
