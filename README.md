@@ -81,6 +81,7 @@ Run test cases
 
 
 
+
 ## Function Description
 
 
@@ -109,6 +110,9 @@ Run test cases
 |`TotalStakedInPool()`            |none                                        |`uint256`                   | ->This function will return the total ever amount stakes by the user in this pool| 
 |`Stake()`                        |```uint256, uint256```                      |`bool`                      | ->This function will stake the user amount. Few required checks are made at the start of the function to prevent the pool from the false deposit. At the initial the user reward will be calculated and the time of staked and the expiry time fileds of the user in the `struct` will be updated. The `allocatedReward` variable will be updated assuming that the reward in the pool is deducted but in real the reward will not be transferred to the user. This technique is just proposed due to the limited Allocation reward amount. The user deposits will be trasnferred to the staking contract|
 |`ReStake()`                      |```uint256, uint256```                      |`bool`                      | ->This function will be used only once the user has initally staked into the pool. If a user wants to stake it's token again then this function will be used. The `Stake()` cannot be used for restaking. This difference between the `ReStake()` && `Stake()` is kept by the `since` variable in the `struct`. if the user has never staked then obviosuly the stakign since time will be = 0. If the user have ever staked then the since will recorded and In that case the user can Restake. **IMPORTANT:-** if the user has sstaked multiple times! then the Locking period will be added to the previous one. For example:- _User1 has staked 10 Tokens at 100% APR for 1 year on 1st Jan, 2022. And again the _User1 has staked 10 tokens on 3rd Jan, 2022 for 1 year. Now the user can withdraw it's deposites after 2 years but the rewards will be more than 100%. because on the restaking the reward will not be calculated according to the the user current deposit e.g 10. The reward will be calculated by taking the currently staked by _User1 that is 10 tokens + 10 token for Restaking = 20 tokens. So the reward will be 20 Token when the user will restake for 1 year on 3rd Jan, 2022. Total reward = 10+20=> 30 tokens / Total deposite = 20 Tokens.|
+|`UnStake()`                      |none                                        |`bool`                      | ->This function will be executed when the user wants to withdraw it's deposited amount. This function will trigger the withraw period and will extend the time period of the withdrawal to 7 days. A user can withdraw it's stakes after 7 days of calling the `UnStake()`|
+|`Withdraw()`                     |none                                        |`bool`                      | ->This function can be executed after 7 days of calling `UnStake()` function.|
+|`Claim()`                        |none                                        |`bool`                      | ->This function can be used by the users to claim their rewards at any moment. **NOTE:-** The rewards of the user will be calculated per second|
 
 
 
