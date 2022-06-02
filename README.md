@@ -2,12 +2,13 @@
 
 [![Docs](https://img.shields.io/badge/docs-%F0%9F%93%84-orange)](https://whitepaper.dragonsofmidgard.com/dragons-of-midgard/)
 ![npm](https://img.shields.io/npm/v/hardhat?color=white)
-[![MIT License](https://codecov.io/gh/OpenZeppelin/openzeppelin-contracts/graph/badge.svg)](https://github.com/Dragons-Of-Midgard-Official/dragons-of-midgard-contracts)
+[![MIT License](https://img.shields.io/badge/LICENSE-MIT-red)](https://github.com/Dragons-Of-Midgard-Official/dragons-of-midgard-contracts)
 [![Discord](https://img.shields.io/discord/922410567162036244?color=purple&label=discord)](https://discord.gg/XeYzSHZAEp)
 ![GitHub repo size](https://img.shields.io/github/repo-size/sobi983/Staking-AURA-V2)
 ![Twitter URL](https://img.shields.io/twitter/url?label=Sobi&style=social&url=https%3A%2F%2Ftwitter.com%2Fssob_ii)
 ![Twitter URL](https://img.shields.io/twitter/url?label=Dragons%20Of%20Midgard&style=social&url=https%3A%2F%2Ftwitter.com%2FDragonsMidgard)
 ![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UC1Nz5pFNUN8QQEtwpCSLZwA?label=Dragons%20Of%20Midgard&style=social)
+
 
 
 # About The Project
