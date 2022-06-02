@@ -42,6 +42,43 @@ To verify the contract
 ```
 
 
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/sobi983/Satking-AURA-V2
+```
+
+Change the network from **rinkeby** to **hardhat** in the ``hardhat.config.js`` file.
+
+```bash
+  module.exports = {
+  defaultNetwork: "hardhat",
+  networks: {
+    hardhat: {
+    },
+```
+
+Install dependencies
+
+```bash
+  npm setup
+```
+
+Compile the contracts
+
+```bash
+  npm run compile
+```
+
+Run test cases
+```bash
+  npm test
+```
+
+
+
 ## Function Description
 
 
