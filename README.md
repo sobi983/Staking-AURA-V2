@@ -156,6 +156,13 @@ Run test cases
 
 Distributed under the MIT License. See `License.txt` for more information.
 
+## Authors
+
+- [@Sobi](https://www.linkedin.com/in/sohaib-s-11a6ab170/)
+- [@Ubaid](https://www.linkedin.com/in/raja-ubaid-ullah-033b3b208/)
+- [@UmarShafique](https://www.linkedin.com/in/umar-shafiq-726b8060/)
+- [@Osaf]()
+
 
 ## Support
 
