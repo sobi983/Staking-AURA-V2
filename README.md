@@ -121,4 +121,10 @@ Run test cases
 Distributed under the MIT License. See `License.txt` for more information.
 
 
+## Support
+
+For support, email contact@ciphers.co or join our discord channel (https://discord.gg/XeYzSHZAEp)
+
+
+
 
