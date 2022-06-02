@@ -26,7 +26,7 @@ A user can claim it's reward at any time but the locking period will be definite
 [WhitePaper](https://docs.google.com/document/d/1W5fmUYNm7rTTrgAN5LxgCBfkuMoGFe3RRnZduO1S4l0/edit)
 
 ## $AURA Token Utility
-![$AURA Utility](https://github.com/sobi983/Satking-AURA-V2/blob/main/AURA Utility.png)
+![$AURA Utility](https://github.com/sobi983/Satking-AURA-V2/blob/main/AURA-Utility.png)
 
 
 
