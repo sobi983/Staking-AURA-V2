@@ -80,6 +80,33 @@ Run test cases
 ```
 
 
+## Function Description
+
+
+
+
+| **Function**                    | **Parameters**                             |**Return**                  | **Description**                                                                                                                                        |
+| :-------------------------------| :----------------------------------------- | :------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `constructor()`(not a fucntion) | ```IERC20, uint256, uint256```             | none                       | ->The address of the ERC20 is initilized to the variable so the relevant function in the IERC20 can be used to interact with the deloyed ERC20, The APR and Minimum staking amount will be initilized        |
+| `CurrentAPR()`                  | none                                       |`uint256`                   | ->This function returns the current APR( Annual Percentage Rate)                                                                                       |
+|`ChangeAPR()`                    | `uint`                                     |`bool`                      | ->This function can only be executed by the owner and can be used to change the current APR
+|`ChangeMinStakingAmount()`       |`uint256`                                   |`bool`                      | ->This function can only be executed by the owner and it can be used to change the minimum staking amount.                                   |
+|`MinStakingAmount()`             |none                                        |`uint256`                   | ->This function will return a minimum staking amount the user can stake in this contract|
+|`AllocationOfRewards()`          |none                                        |`uint256`                   | ->This function will return the current remaining Rewards that can be given to the new users. **Note:-** When the user stakes the reward is calculated according to the locking period and is subtracted with the AllocationReward initially although the user haven't claimed any reward yet. This is because the rewards in the pool is limited, so we need to keep record of the AllocatedRewards|
+|`IncreaseAllocationReward()`     |`uint256`                                   |`bool`                      | ->This function can only be executed by the owner. The function will increase the Allocation of the rewards in the pool, the `allocatedReward` variable will updated.|
+|`DecreaseAllocationReward()`     |`uint256`                                   |`bool`                      | ->This function can only be executed by the owner. The function will decrease the Allocation of the rewards in the pool, the `allocatedReward` variable will updated.|
+|`TransferAllocatedRewardFromContractToOwner()`|`uint256`                      |`bool`                      | ->This function can only be executed by the owner. The remaining rewards can be transferred to the owner if the staking contract is closed. This function prevents locking the tokens into this contract forever|
+|`withdrawEther()`                |`none`                                      |`bool`                      | ->This function can only be executed by the owner. This function is created if bymistake someone sends ether to this contract.|
+|`EmergencyWithdrawal()`          |```address, uint256```                      |`bool`                      | ->This function can only be executed by the owner. The function is created for the stakers, if any of the stakers willing to withdraw it's deposit then this function can be used to trasnfer the deposited amount back to the owner. **Note:-** First check the amount of the deposite of the user in the contract by using the function `CurrentlyStaked(address _user)`|
+|`TotalWithdrawal()`              |`address`                                   |`uint256`                   | ->This function will return total claimed rewards of the user and after the expiration of the time period when the user will withdarw the deppsit the amount of deposit will also be added in the variable and return the value of **claimed+deposit**|
+|`TotalPendingReward()`           |`address`                                   |`uint256`                   | ->This function will return the pending rewards of the user. A user can claim the reward at anytime. **Note:-** the reward of the user will be calculated per seconds
+|`TotalAccumulatedReward()`       |`address`                                   |`uint256`                   | ->This function will return the total withdrawn claimed by the user|
+|`CalculateReward()`              |```uint256, uint256```                      |`uint256`                   | ->This is core function of the staking pool. The function returns the reward of the user calculated with respect to the time and amount **Formula:-**`(APR * Amount * Time)/31536000/100`.|
+|`TotalDelegates()`               | none                                       |`uint256`                   | ->This function returns the amount of the users that have currently staked into the pool.|
+|`CurrentlyStaked()`              |`address`                                   |`uint256`                   | ->This function returns the total amount depoit of the user in the staking pool.|
+|`HasStake()`                     |`address`                                   |`bool`                      | ->Thsi function will return the boolean value, the user currently status of a staked in the pool.|
+
+
 
                                                                                     
 
