@@ -27,3 +27,17 @@ Setup the hardhat enviornment
   npm run compile //compile the contracts and create artifacts
   npm test //test the testing scripts
 ```
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npx hardhat run scripts/deploy.js --network rinkeby
+```
+To verify the contract
+```bash
+  npx hardhat verify --network rinkeby "ERC20(AURA) CONTRACT ADDRESS"
+  npx hardhat verify --network rinkeby "STAKING CONTRACT ADDRESS" "ERC20(AURA) CONTRACT ADDRESS" "ALLOCATION OF REWARD - Integer" "MINIMUM STAKING AMOUNT - Integer"
+```
+
