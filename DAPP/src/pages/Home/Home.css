@@ -1,0 +1,10 @@
+.home-bg {
+  background-color: black;
+  overflow: hidden;
+  /* background-image: url(../../assets/pool.svg); */
+  background-image: url(../../assets/AURA-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}

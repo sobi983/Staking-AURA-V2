@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h3 {
+	font-family: "Acme", sans-serif;
+}
