@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // Author: Sobi (Ciphers)
 
-pragma solidity ^0.8.4;
+pragma solidity ^0.8.0;
 
 
 interface UserStats{
@@ -11,6 +11,7 @@ interface UserStats{
   function TotalPendingReward(address) external view returns(uint256);
   function TotalAccumulatedReward(address) external view returns(uint256);
   function HasStake(address) external view returns(bool);
+
 }
 
 interface Reward{
@@ -33,4 +34,10 @@ interface Staking{
   function Withdraw() external returns(bool);
   function Claim() external returns(bool);
   function EmergencyWithdrawal(address _user, uint256 _amount) external returns(bool);
+
+  event User_Staked(address indexed userAddress, uint256 indexed amount, uint256 indexed lockingPeriod);
+  event User_ReStaked(address indexed userAddress, uint256 indexed amount, uint256 indexed lockingPeriod, uint256 totalStakedStatus);
+  event User_Withdraw(address indexed userAddress, uint256 indexed withdrawaAmount);
+  event User_Unstake(address indexed userAddress, uint256 indexed amount, uint256 indexed withdrawalTime);
+  event User_Claim(address indexed userAddress, uint256 indexed claimAmount, uint256 pendingReward);
 }

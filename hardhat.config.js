@@ -59,7 +59,7 @@ module.exports = {
     }
   },
   gasReporter: {
-    enabled: process.env.REPORT_GAS !== undefined ? ture :false,
+    enabled: true,
     currency: "USD",
     coinmarketcap: process.env.Coinmarketcap
   },

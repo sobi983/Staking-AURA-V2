@@ -49,7 +49,7 @@ contract AURAStaking is Ownable, Pausable, ReentrancyGuard, UserStats, Reward, S
     mapping(address => userStats) public user; 
 
     constructor (IERC20 _token, uint256 _APR, uint256 _MinStakingAmount ){
-        // if(address(_token).code.length > 0)
+        require( address(_token) != address(0), "The address is not correct");
         token = _token;
         APR = _APR;
         minStakingAmount = _MinStakingAmount *10**18;
@@ -111,7 +111,7 @@ contract AURAStaking is Ownable, Pausable, ReentrancyGuard, UserStats, Reward, S
 
     function checkContractValidity() public view returns(bool){
         return address(this).isContract();
-            }
+    }
     
     //Re-Fund scenario
     function EmergencyWithdrawal(address _user, uint256 _amount) onlyOwner override public returns(bool){
@@ -171,6 +171,7 @@ contract AURAStaking is Ownable, Pausable, ReentrancyGuard, UserStats, Reward, S
         if(user[_msgSender()].since > 0) revert AlreadyStaked();
         _stake(amount * 10**18, time, RewardOFUser); 
         totalStakedInPool += amount * 10**18;
+        emit User_Staked(_msgSender(), amount,user[_msgSender()].lockingPeriod);
         return true;
     }
 
@@ -197,6 +198,7 @@ contract AURAStaking is Ownable, Pausable, ReentrancyGuard, UserStats, Reward, S
         if(user[_msgSender()].since == 0) revert StakeYourAmount();
         _reStake(amount * 10**18, time, RewardOFUser ); 
         totalStakedInPool += amount * 10**18;
+        emit User_ReStaked( _msgSender(), amount,  user[_msgSender()].lockingPeriod, user[_msgSender()].currentlyStaked);
         return true;
     } 
 
@@ -216,6 +218,7 @@ contract AURAStaking is Ownable, Pausable, ReentrancyGuard, UserStats, Reward, S
         if(user[_msgSender()].currentlyStaked == 0) revert InsufficientStakes();
         if(user[_msgSender()].expiry > Time) revert NotExpiredYet();
         _unStake();
+        emit User_Unstake(_msgSender(), user[_msgSender()].currentlyStaked, user[_msgSender()].expiry);
         return true;
     }
 
@@ -230,6 +233,7 @@ contract AURAStaking is Ownable, Pausable, ReentrancyGuard, UserStats, Reward, S
         if(user[_msgSender()].expiry > Time) revert NotExpiredYet();
         if(user[_msgSender()].currentlyStaked <= 0) revert NotExpiredYet();
         _withdraw();
+        emit User_Withdraw(_msgSender(),  user[_msgSender()].totalWithdrawal);
         return true;
     }
 
@@ -253,19 +257,19 @@ contract AURAStaking is Ownable, Pausable, ReentrancyGuard, UserStats, Reward, S
         uint256 rewardPerSecond = (user[_msgSender()].totalPendingReward / user[_msgSender()].lockingPeriod);
         uint256 rewardTillToday = Time - user[_msgSender()].since;
         uint256 claim = rewardPerSecond*rewardTillToday;
-        user[_msgSender()].totalWithdrawal += claim;
     
         if(Time >= user[_msgSender()].expiry){
             token.transfer(msg.sender, user[_msgSender()].totalPendingReward );
-            user[_msgSender()].totalAccumulatedReward = user[_msgSender()].totalPendingReward;
+            emit User_Claim( _msgSender(), user[_msgSender()].totalPendingReward, 0);
+            user[_msgSender()].totalAccumulatedReward += user[_msgSender()].totalPendingReward;
             user[_msgSender()].totalPendingReward -= user[_msgSender()].totalPendingReward;
         }
 
         else{
         token.transfer(msg.sender, claim );
-        user[_msgSender()].totalAccumulatedReward = claim;
+        user[_msgSender()].totalAccumulatedReward += claim;
         user[_msgSender()].totalPendingReward -= claim;
-
+        emit User_Claim( _msgSender(), claim, user[_msgSender()].totalPendingReward );
         }
 
         if(user[_msgSender()].totalPendingReward == 0 && user[_msgSender()].currentlyStaked == 0){ delete user[_msgSender()];}
