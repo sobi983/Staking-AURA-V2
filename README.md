@@ -39,6 +39,7 @@ A user can claim it's reward at any time but the locking period will be definite
 ## Documentation
 
 [WhitePaper](https://docs.google.com/document/d/1W5fmUYNm7rTTrgAN5LxgCBfkuMoGFe3RRnZduO1S4l0/edit)
+
 [Staking](https://docs.google.com/document/d/1m82DykqoBFbF0q1OrO8oyM4y85HOPR8-q84UJ07wFII/edit?usp=sharing)
 
 ## Features
