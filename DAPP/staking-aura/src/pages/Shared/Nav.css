@@ -1,0 +1,36 @@
+.connect-btn {
+	background-color: #f5af04;
+	padding: 5px 20px;
+	border-radius: 10px;
+	font-family: "Acme", sans-serif;
+}
+.menu-icon {
+	color: #f5af04;
+}
+.nav {
+	position: relative;
+}
+.nav-coin {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.logo {
+	position: absolute;
+	left: 40px;
+	top: 40px;
+}
+.navbar li a {
+	font-family: "Acme", sans-serif;
+	color: #f5af04;
+}
+.nav-active {
+	background-color: black;
+}
+
+@media (max-width: 768px) {
+	.nav-fixed {
+		background-color: black;
+	}
+}
