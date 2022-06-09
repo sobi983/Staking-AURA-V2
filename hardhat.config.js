@@ -47,6 +47,10 @@ module.exports = {
     rinkeby: {
       url: `https://rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`,
       accounts: [`${process.env.RINKEBY_PRIVATE_KEY}`]
+    },
+    mainnet: {
+      url: `https://mainnet.infura.io/v3/${process.env.MAINNET_API_KEY}`,
+      accounts: [`${process.env.RINKEBY_PRIVATE_KEY}`]
     }
   },
   solidity: {
@@ -59,7 +63,7 @@ module.exports = {
     }
   },
   gasReporter: {
-    enabled: false,
+    enabled: true,
     currency: "USD",
     coinmarketcap: process.env.Coinmarketcap
   },
@@ -75,6 +79,7 @@ module.exports = {
   etherscan : {
     apiKey : {
       rinkeby : process.env.EtherScanAPI,
+      mainnet : process.env.EtherScanAPI
     } 
   }
 }
