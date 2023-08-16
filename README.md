@@ -184,11 +184,6 @@ The pull requests will be reviewed and eventually merged into the main repo. See
 ## Authors
 
 - [@Sobi](https://www.linkedin.com/in/sohaib-s-11a6ab170/)
-- [@UmarShafiq](https://www.linkedin.com/in/umar-shafiq-726b8060/)
-- [@Osaf]()
-- [@Arsl](https://www.linkedin.com/in/arsl-qureshi-4253a4179/)
-- [@Usman](https://www.linkedin.com/in/usma-kayani/)
-
 
 ## Support
 
